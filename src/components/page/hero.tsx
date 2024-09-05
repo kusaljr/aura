@@ -17,31 +17,57 @@ export default function HeroSection() {
             We offers investment opportunities in single-family homes,
             apartments, and commercial buildings for strong returns.
           </p>
-          <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-            <Link
-              to="/contact"
-              className="block py-2 px-4 text-center text-white font-medium bg-primary duration-150  rounded-lg shadow-lg hover:shadow-none"
-            >
-              Contact Us
-            </Link>
-            <Link
-              to="/about"
-              className="flex items-center justify-center gap-x-2 py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg md:inline-flex"
-            >
-              About Us
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="w-5 h-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </Link>
+          <div className="items-center space-y-3 sm:flex sm:space-y-0">
+            <div>
+              <form action="" className="w-full mt-12">
+                <div className="relative flex items-center rounded-full bg-white dark:bg-gray-900 border dark:border-gray-700 border-primary/10 shadow-md md:p-2 lg:pr-3">
+                  <div className="pl-6 py-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 m-auto fill-blue-900/60 dark:fill-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                  </div>
+                  <input
+                    autoComplete="email"
+                    placeholder="Your mail address"
+                    className="w-full p-4 rounded-full placeholder-gray-600 dark:placeholder-white bg-transparent"
+                    type="email"
+                  />
+                  <div className="md:pr-1.5 lg:pr-0">
+                    <Link to={"/contact"}>
+                      <button
+                        type="button"
+                        title="Start buying"
+                        className="relative h-12 w-20 sm:w-auto ml-auto sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
+                      >
+                        <span className="relative hidden w-max text-white dark:text-gray-900 font-semibold md:block">
+                          Contact Us
+                        </span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="relative h-6 w-6 mx-auto text-white dark:text-gray-900 md:hidden"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                          />
+                        </svg>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
         <div className="flex-none mt-14 md:mt-0 md:max-w-lg">
