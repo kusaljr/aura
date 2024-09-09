@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { ChartLine, Lightbulb, ShieldCheck, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
@@ -121,30 +120,3 @@ export function InvestCarousel() {
     </div>
   );
 }
-
-const carouselItems = [
-  {
-    icon: ChartLine,
-    title: "Consistent Rental Income",
-    description:
-      "Steady cash flow from well-managed properties, delivering reliable returns to investors.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Strategic Acquisitions",
-    description:
-      "Targeted property investments in high-growth areas to maximize value appreciation.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Risk Mitigation",
-    description:
-      "Diversified portfolios and comprehensive due diligence to minimize investment risks.",
-  },
-  {
-    icon: Users,
-    title: "Expert Management Team",
-    description:
-      "A team with deep industry experience, ensuring optimal property performance and growth.",
-  },
-];
